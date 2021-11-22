@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">StartUpTeamRecruitingApp</string>
+    <string name="goto_signup">게임 시작</string>
+    <string name="goto_signin">이미 캐릭터가 있나요? 로그인</string>
+    <string name="title">스타트업\n팀원구함</string>
+    <string name="sub_title">대학생 스타트업 플랫폼</string>
+    <string name="student_signup">대학생 회원가입</string>
+    <string name="signup">일반 회원가입</string>
+    <string name="signin">로그인</string>
+
 </resources>

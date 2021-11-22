@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/party"
+        android:name="com.chosun.startupteamrecruitingapp.Party"
+        android:label="fragment_party"
+        tools:layout="@layout/fragment_party">
+    </fragment>
+    <fragment
+        android:id="@+id/challenge"
+        android:name="com.chosun.startupteamrecruitingapp.Challenge"
+        android:label="fragment_challenge"
+        tools:layout="@layout/fragment_challenge">
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.chosun.startupteamrecruitingapp.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/gallery"
+        android:name="com.chosun.startupteamrecruitingapp.Gallery"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+    </fragment>
+    <fragment
+        android:id="@+id/funding"
+        android:name="com.chosun.startupteamrecruitingapp.Funding"
+        android:label="fragment_funding"
+        tools:layout="@layout/fragment_funding">
+    </fragment>
+</navigation>

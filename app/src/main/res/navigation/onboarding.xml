@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding"
+    app:startDestination="@+id/title"
+    >
+    <fragment
+        android:id="@+id/title"
+        android:name="com.chosun.startupteamrecruitingapp.Title"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_title_to_signup"
+            app:destination="@id/signup"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_title_to_signin"
+            app:destination="@id/signin"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signin"
+        android:name="com.chosun.startupteamrecruitingapp.SignIn"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin">
+        <action
+            android:id="@+id/action_signin_to_main"
+            app:destination="@id/main"/>
+    </fragment>
+
+</navigation>
