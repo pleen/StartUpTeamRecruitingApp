@@ -3,8 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_01.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.263" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.263" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/my_button.xml" value="0.313" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/my_edit_text.xml" value="0.313" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/mybutton.xml" value="0.312" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/font/noto_sans.xml" value="0.3611111111111111" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_challenge.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_funding.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_gallery.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_party.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signin.xml" value="0.67" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_01.xml" value="0.25" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_01.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_02.xml" value="0.33" />
         <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_student__signup.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_title.xml" value="0.33" />
+        <entry key="..\:/Users/pleen/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.263" />
         <entry key="..\:/Users/pleen12/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/pleen12/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_blank.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pleen12/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_challenge.xml" value="0.17806484295845998" />

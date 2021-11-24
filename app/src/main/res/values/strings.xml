@@ -7,5 +7,6 @@
     <string name="student_signup">대학생 회원가입</string>
     <string name="signup">일반 회원가입</string>
     <string name="signin">로그인</string>
+    <string name="input_id">아이디를 입력해 주세요.</string>
 
 </resources>
