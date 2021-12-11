@@ -1,14 +1,11 @@
 package com.chosun.startupteamrecruitingapp;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import androidx.activity.OnBackPressedCallback;
-import androidx.activity.OnBackPressedDispatcher;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -28,6 +25,9 @@ public class SignUp_01 extends Fragment {
                 ((MainActivity)getActivity()).onBackPressed();
             }
         });
+        ConstraintLayout stuSignUpBtn = (ConstraintLayout) rootView.findViewById(R.id.student_signup_constraint);
+        stuSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_student_signup_01, null));
+
         return rootView;
     }
 }

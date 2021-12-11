@@ -83,7 +83,7 @@
         app:layout_constraintTop_toBottomOf="@+id/id_text" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/goto_signin_btn"
+        android:id="@+id/goto_signup_02_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"

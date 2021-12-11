@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/student_signup_btn"
+            android:id="@+id/student_signup_constraint"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:layout_marginLeft="30dp"
@@ -88,7 +88,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/student_signup_btn"
+            app:layout_constraintTop_toBottomOf="@+id/student_signup_constraint"
             app:layout_constraintVertical_bias="0.08">
 
             <ImageView

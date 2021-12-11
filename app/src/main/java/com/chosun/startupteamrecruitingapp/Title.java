@@ -19,7 +19,7 @@ public class Title extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_title, container, false);
         Button goToSignUpBtn = rootView.findViewById(R.id.goto_signup_btn);
-        ConstraintLayout goToSignInBtn = rootView.findViewById(R.id.goto_signin_btn);
+        ConstraintLayout goToSignInBtn = rootView.findViewById(R.id.goto_signup_02_btn);
         goToSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_title_to_signup, null));
         goToSignInBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_title_to_signin, null));
         return rootView;
