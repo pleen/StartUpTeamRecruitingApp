@@ -19,12 +19,7 @@ public class SignUp_01 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_signup_01, container, false);
         ImageView closeIcon= (ImageView)rootView.findViewById(R.id.close_btn);
-        closeIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity)getActivity()).onBackPressed();
-            }
-        });
+        closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
         ConstraintLayout stuSignUpBtn = (ConstraintLayout) rootView.findViewById(R.id.student_signup_constraint);
         stuSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_student_signup_01, null));
 

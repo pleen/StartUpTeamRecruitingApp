@@ -18,12 +18,7 @@ public class SignUpStu_01 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_signup_stu_01, container, false);
         ImageView closeIcon= (ImageView)rootView.findViewById(R.id.close_btn);
-        closeIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity)getActivity()).onBackPressed();
-            }
-        });
+        closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
         Button emailAuthBtn = (Button) rootView.findViewById(R.id.email_auth_button);
         emailAuthBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_student_signup_02, null));
 

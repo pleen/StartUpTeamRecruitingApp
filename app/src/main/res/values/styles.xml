@@ -1,9 +1,0 @@
-<resources xmlns:app="http://schemas.android.com/apk/res-auto">
-    <style name="SignUpTheme">
-        <item name="titleTextStyle">@style/TitleStyle</item>
-        <item name="titleTextColor">@color/black</item>
-    </style>
-    <style name="TitleStyle">
-        <item name="android:textColor">@color/black</item>
-    </style>
-</resources>
