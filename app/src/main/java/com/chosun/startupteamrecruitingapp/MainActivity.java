@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     NavHostFragment navHostFragment;
     NavController navController;
     AppBarConfiguration appBarConfiguration;
-    Toolbar toolbar;
+//    Toolbar toolbar;
     BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
         navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.my_nav_host_fragment);
         navController = navHostFragment.getNavController();
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        NavigationUI.setupWithNavController(toolbar,navController,appBarConfiguration);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayShowTitleEnabled(false);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nav_view);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
 
@@ -40,13 +41,15 @@ public class MainActivity extends AppCompatActivity {
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
                 if(destination.getParent().getId()==R.id.onboarding) {
-                    toolbar.setVisibility(View.GONE);
+//                    toolbar.setVisibility(View.GONE);
                     bottomNavigationView.setVisibility(View.GONE);
                 } else if(destination.getParent().getId()==R.id.signup){
-                    toolbar.setVisibility(View.VISIBLE);
+//                    toolbar.setVisibility(View.VISIBLE);
                     bottomNavigationView.setVisibility(View.GONE);
+//                    findViewById(R.id.signup_title).setVisibility(View.VISIBLE);
+//                    findViewById(R.id.close_btn).setVisibility(View.VISIBLE);
                 } else if(destination.getParent().getId()==R.id.main){
-                    toolbar.setVisibility(View.GONE);
+//                    toolbar.setVisibility(View.GONE);
                     bottomNavigationView.setVisibility(View.VISIBLE);
                 }
             }
