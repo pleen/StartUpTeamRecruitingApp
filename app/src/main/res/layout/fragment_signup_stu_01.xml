@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.chosun.startupteamrecruitingapp.SignUp_01">
+    tools:context="com.chosun.startupteamrecruitingapp.SignUpStu_01">
     <include layout="@layout/signup_toolbar"/>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -39,11 +39,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
-
+            <!--검색 가능하게 변경해야됨-->
             <EditText
                 android:id="@+id/university_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
@@ -95,6 +96,7 @@
                 android:id="@+id/university_email_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"

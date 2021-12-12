@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/signup_constraint"
     android:background="@color/white"
-    tools:context="com.chosun.startupteamrecruitingapp.SignUp_01">
+    tools:context="com.chosun.startupteamrecruitingapp.SignUpStu_02">
     <include layout="@layout/signup_toolbar"/>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/university_select_constaint"

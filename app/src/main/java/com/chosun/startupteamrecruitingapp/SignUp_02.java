@@ -9,18 +9,20 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-public class SignUpStu_02 extends Fragment {
+
+public class SignUp_02 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_signup_stu_02, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_signup_02, container, false);
         ImageView closeIcon= (ImageView)rootView.findViewById(R.id.close_btn);
         closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
-        Button signupBtn = (Button) rootView.findViewById(R.id.goto_signup_02_btn);
-        signupBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_signup_02, null));
+        Button goToSignUpBtn_03 = (Button)rootView.findViewById(R.id.goto_signup_03_btn);
+        goToSignUpBtn_03.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_signup_03, null));
         return rootView;
     }
 }

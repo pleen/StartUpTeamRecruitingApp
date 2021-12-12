@@ -16,6 +16,13 @@
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_goto_signup_02"
+            app:destination="@id/signup_02"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/student_signup_01"
@@ -35,5 +42,34 @@
         android:name="com.chosun.startupteamrecruitingapp.SignUpStu_02"
         android:label="fragment_student_signup_02"
         tools:layout="@layout/fragment_signup_stu_02">
+        <action
+            android:id="@+id/action_goto_signup_02"
+            app:destination="@id/signup_02"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup_02"
+        android:name="com.chosun.startupteamrecruitingapp.SignUp_02"
+        android:label="fragment_signup_02"
+        tools:layout="@layout/fragment_signup_02">
+        <action
+            android:id="@+id/action_goto_signup_03"
+            app:destination="@id/signup_03"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signup_03"
+        android:name="com.chosun.startupteamrecruitingapp.SignUp_03"
+        android:label="fragment_signup_03"
+        tools:layout="@layout/fragment_signup_03">
+        <action
+            android:id="@+id/action_signup_to_main"
+            app:destination="@id/main"/>
     </fragment>
 </navigation>

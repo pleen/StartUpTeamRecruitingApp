@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mbti_array">
+        <item>선택없음</item>
+        <item>INFJ</item>
+        <item>INTJ</item>
+        <item>ISTP</item>
+        <item>ISTJ</item>
+        <item>INFP</item>
+        <item>INTP</item>
+        <item>ISFP</item>
+        <item>ISFJ</item>
+        <item>ENFJ</item>
+        <item>ENTJ</item>
+        <item>ESTP</item>
+        <item>ESTJ</item>
+        <item>ENFP</item>
+        <item>ENTP</item>
+        <item>ESFP</item>
+        <item>ESFJ</item>
+    </string-array>
+</resources>
