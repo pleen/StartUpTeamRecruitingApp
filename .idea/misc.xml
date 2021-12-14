@@ -26,6 +26,8 @@
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/my_edit_text.xml" value="0.3958333333333333" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/my_spinner.xml" value="0.34375" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/my_spinner_text.xml" value="0.39375" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/activity_main.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/activity_retrofit.xml" value="0.25" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_challenge.xml" value="0.25" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_challenge_list.xml" value="0.16134751773049646" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_challenge_member.xml" value="0.16134751773049646" />
@@ -34,13 +36,16 @@
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_gallery.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_home.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_party.xml" value="0.3796875" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_search_univ.xml" value="0.1" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_search_univ_tmp.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signin.xml" value="0.32760416666666664" />
-        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_01.xml" value="0.5" />
-        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_02.xml" value="0.25" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_01.xml" value="0.1" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_02.xml" value="0.22" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_03.xml" value="0.3776041666666667" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_01.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_02.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_title.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/listview_item.xml" value="0.18070652173913043" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/signup_toolbar.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/spinner_text.xml" value="0.3776041666666667" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/xml/searchable.xml" value="0.32760416666666664" />

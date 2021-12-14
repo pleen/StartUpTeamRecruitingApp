@@ -36,6 +36,13 @@
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_goto_search_univ"
+            app:destination="@id/search_univ"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/student_signup_02"
@@ -71,5 +78,11 @@
         <action
             android:id="@+id/action_signup_to_main"
             app:destination="@id/main"/>
+    </fragment>
+    <fragment
+        android:id="@+id/search_univ"
+        android:name="com.chosun.startupteamrecruitingapp.SearchUniv"
+        android:label="fragment_search_univ"
+        tools:layout="@layout/fragment_search_univ">
     </fragment>
 </navigation>

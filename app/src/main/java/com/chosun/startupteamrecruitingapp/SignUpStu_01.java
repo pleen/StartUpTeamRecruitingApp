@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -21,7 +22,8 @@ public class SignUpStu_01 extends Fragment {
         closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
         Button emailAuthBtn = (Button) rootView.findViewById(R.id.email_auth_button);
         emailAuthBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_student_signup_02, null));
-
+        EditText universityText = (EditText) rootView.findViewById(R.id.university_text);
+        universityText.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_search_univ, null));
         return rootView;
     }
 }
