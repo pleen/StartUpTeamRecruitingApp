@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -26,11 +27,11 @@ import retrofit2.Retrofit;
 public class SearchUniv extends Fragment {
     Retrofit retrofit;
     private ListView listView;
-    private EditText editText;
+    private EditText searchUnivText;
     private List<University> univNames;
     private List<University> searchedUnivNames = new ArrayList<>();
     private UniversityListAdapter adapter;
-
+    private University selectedUniv;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class SearchUniv extends Fragment {
         closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
 
         listView = (ListView)rootView.findViewById(R.id.univ_list);
-        editText = (EditText)rootView.findViewById(R.id.univ_search_text);
+        searchUnivText = (EditText)rootView.findViewById(R.id.univ_search_text);
 
         univInterface service = retrofit.create(univInterface.class);
         Call<List<University>> call = service.getUnivs();
@@ -50,7 +51,6 @@ public class SearchUniv extends Fragment {
                 if (response.isSuccessful()) {
                     List<University> result = response.body();
                     Log.d("Retrofit", result.toString());
-                    //univNames=getUnivNames(result);
                     univNames = result;
                     adapter = new UniversityListAdapter(univNames);
                     listView.setAdapter(adapter);
@@ -64,7 +64,7 @@ public class SearchUniv extends Fragment {
                 Log.d("Retrofit", "onFailure()" + t.getMessage());
             }
         });
-        editText.addTextChangedListener(new TextWatcher() {
+        searchUnivText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -77,9 +77,25 @@ public class SearchUniv extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                String keyword = editText.getText().toString();
+                String keyword = searchUnivText.getText().toString();
                 searchProc(keyword);
                 adapter.notifyDataSetChanged();
+            }
+        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                if(searchUnivText.getText().length()==0) {
+                    selectedUniv = univNames.get(position);
+                }
+                else {
+                    selectedUniv = searchedUnivNames.get(position);
+                }
+                bundle.putString("selectedUnivName", selectedUniv.getUnivNm());
+                bundle.putString("selectedUnivDomain", selectedUniv.getUnivDomain());
+                getParentFragmentManager().setFragmentResult("selectedUniv", bundle);
+                ((MainActivity)getActivity()).onBackPressed();
             }
         });
         return rootView;

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/signup_constraint"
     android:background="@color/white"
     tools:context="com.chosun.startupteamrecruitingapp.SignUp_01"
     android:orientation="vertical">
@@ -34,7 +33,6 @@
                 android:src="@drawable/icon_school"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline"
-                app:layout_constraintHorizontal_bias="0.8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_begin="70dp" />
+                app:layout_constraintGuide_percent="0.22"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -52,14 +50,14 @@
                 android:fontFamily="@font/noto_sans"
                 android:text="대학생 회원가입"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="18dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.43" />
+                app:layout_constraintVertical_bias="0.35" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -68,7 +66,7 @@
                 android:fontFamily="@font/noto_sans"
                 android:text="스타트업을 헤쳐나갈 팀원들을 구하러 왔나요?\n스팀에 온 걸 환영합니다!"
                 android:textColor="@color/black"
-                android:textSize="12sp"
+                android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -97,7 +95,6 @@
                 android:src="@drawable/icon_person"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                app:layout_constraintHorizontal_bias="0.8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_begin="70dp" />
+                app:layout_constraintGuide_percent="0.22" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -115,14 +112,14 @@
                 android:fontFamily="@font/noto_sans"
                 android:text="일반 회원가입"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="18dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.43" />
+                app:layout_constraintVertical_bias="0.35" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -131,7 +128,7 @@
                 android:fontFamily="@font/noto_sans"
                 android:text="학생들의 스타트업을 구경하러 오셨나요?\n창의적인 아이디어를 구경하고 펀딩도 해봐요!"
                 android:textColor="@color/black"
-                android:textSize="12sp"
+                android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

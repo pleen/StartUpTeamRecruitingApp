@@ -5,16 +5,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 import androidx.navigation.Navigation;
 
 
 public class SignUp_02 extends Fragment {
+    EditText emailText;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -23,6 +26,14 @@ public class SignUp_02 extends Fragment {
         closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
         Button goToSignUpBtn_03 = (Button)rootView.findViewById(R.id.goto_signup_03_btn);
         goToSignUpBtn_03.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_signup_03, null));
+        emailText = (EditText)rootView.findViewById(R.id.email_text);
+        getParentFragmentManager().setFragmentResultListener("email", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull String key, @NonNull Bundle bundle) {
+                String studentEmail = bundle.getString("studentEmail");
+                emailText.setText(studentEmail);
+            }
+        });
         return rootView;
     }
 }

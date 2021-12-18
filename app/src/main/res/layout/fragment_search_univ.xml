@@ -20,9 +20,12 @@
         android:padding="10dp"
         android:selectAllOnFocus="true"
         android:textColorHint="#999999" />
+
     <ListView
         android:id="@+id/univ_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:dividerHeight="1dp"/>
+        android:divider="@android:color/system_neutral1_100"
+        android:dividerHeight="1dp"
+        android:padding="10dp" />
 </LinearLayout>

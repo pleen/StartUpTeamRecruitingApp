@@ -8,7 +8,10 @@
         android:id="@+id/tv_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/EditTextStyle"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noto_sans"
+        android:textSize="20dp"
+        android:padding="10dp"
         />
 
 </LinearLayout>
