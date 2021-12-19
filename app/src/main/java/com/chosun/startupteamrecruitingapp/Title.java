@@ -20,6 +20,8 @@ public class Title extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_title, container, false);
         Button goToSignUpBtn = rootView.findViewById(R.id.goto_signup_btn);
         ConstraintLayout goToSignInBtn = rootView.findViewById(R.id.goto_signup_02_btn);
+        // 버튼에 액션 등록
+        // 버튼 클릭시 해당 액션에 지정된 목적지 프레그먼트로 이동
         goToSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_title_to_signup, null));
         goToSignInBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_title_to_signin, null));
         return rootView;

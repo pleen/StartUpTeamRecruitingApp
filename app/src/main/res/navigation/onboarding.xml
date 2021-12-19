@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--navigation 옵션-->
+<!--    app:startDestination -> 네비게이션이 시작할 때 처음 보여줄 프래그먼트 id-->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/onboarding"
     app:startDestination="@+id/title"
     >
+    <!--fragment 옵션 -> 이 네비게이션을 통해 이동할 프레그먼트 들을 추가하면됨-->
+    <!--    tools:layout -> 보여줄 프레그먼트 레이아웃 입력-->
     <fragment
         android:id="@+id/title"
         android:name="com.chosun.startupteamrecruitingapp.Title"
         android:label="fragment_title"
         tools:layout="@layout/fragment_title">
+        <!--action 옵션 -> action으로 목적지 프레그먼트나 에니메이션 지정 가능-->
+        <!--    android:id -> 예를 들어 나가는 버튼에 해당 액션id를 등록하면 버튼클릭시 액션에 지정된 목적지 프레그먼트로 이동  -->
+        <!--    app:destination -> 이동할 목적지 프레그먼트 id 입력-->
+        <!--    app:xxxxAnim -> 해당 액션이 실행되면서 보여줄 에니메이션 입력-->
         <action
             android:id="@+id/action_title_to_signup"
             app:destination="@id/signup"

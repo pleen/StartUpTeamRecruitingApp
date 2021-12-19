@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context=this;
+        // navHostFragment: 네비게이션 그래프에 따라 MainActivity 에서 보여줄 프래그먼트
         navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.my_nav_host_fragment);
+        // 대상으로 이동은 NavConroller 이용
         navController = navHostFragment.getNavController();
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nav_view);
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
+        // 현재 화면에 따라 bottomNavigation이 보이게, 안보이게 설정
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
             @Override
             public void onDestinationChanged(@NonNull NavController controller,
