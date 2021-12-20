@@ -27,13 +27,7 @@ public class SignUp_02 extends Fragment {
         Button goToSignUpBtn_03 = (Button)rootView.findViewById(R.id.goto_signup_03_btn);
         goToSignUpBtn_03.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_signup_03, null));
         emailText = (EditText)rootView.findViewById(R.id.email_text);
-        getParentFragmentManager().setFragmentResultListener("email", this, new FragmentResultListener() {
-            @Override
-            public void onFragmentResult(@NonNull String key, @NonNull Bundle bundle) {
-                String studentEmail = bundle.getString("studentEmail");
-                emailText.setText(studentEmail);
-            }
-        });
+
         return rootView;
     }
 }

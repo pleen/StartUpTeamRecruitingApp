@@ -10,8 +10,8 @@
         android:label="fragment_signup_01"
         tools:layout="@layout/fragment_signup_01">
         <action
-            android:id="@+id/action_goto_student_signup_01"
-            app:destination="@id/student_signup_01"
+            android:id="@+id/action_goto_student_signup_02"
+            app:destination="@id/student_signup_02"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
@@ -25,13 +25,13 @@
             app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
-        android:id="@+id/student_signup_01"
-        android:name="com.chosun.startupteamrecruitingapp.SignUpStu_01"
-        android:label="fragment_student_signup_01"
-        tools:layout="@layout/fragment_signup_stu_01">
+        android:id="@+id/student_signup_02"
+        android:name="com.chosun.startupteamrecruitingapp.SignUpStu_02"
+        android:label="fragment_student_signup_02"
+        tools:layout="@layout/fragment_signup_stu_02">
         <action
-            android:id="@+id/action_goto_student_signup_02"
-            app:destination="@id/student_signup_02"
+            android:id="@+id/action_goto_signup_03"
+            app:destination="@id/signup_03"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
@@ -44,19 +44,7 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"/>
     </fragment>
-    <fragment
-        android:id="@+id/student_signup_02"
-        android:name="com.chosun.startupteamrecruitingapp.SignUpStu_02"
-        android:label="fragment_student_signup_02"
-        tools:layout="@layout/fragment_signup_stu_02">
-        <action
-            android:id="@+id/action_goto_signup_02"
-            app:destination="@id/signup_02"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"/>
-    </fragment>
+
     <fragment
         android:id="@+id/signup_02"
         android:name="com.chosun.startupteamrecruitingapp.SignUp_02"
@@ -84,5 +72,8 @@
         android:name="com.chosun.startupteamrecruitingapp.SearchUniv"
         android:label="fragment_search_univ"
         tools:layout="@layout/fragment_search_univ">
+        <action
+            android:id="@+id/action_search_to_signup_02"
+            app:destination="@id/student_signup_02"/>
     </fragment>
 </navigation>

@@ -94,7 +94,7 @@ public class SearchUniv extends Fragment {
                 }
                 bundle.putString("selectedUnivName", selectedUniv.getUnivNm());
                 bundle.putString("selectedUnivDomain", selectedUniv.getUnivDomain());
-                getParentFragmentManager().setFragmentResult("selectedUniv", bundle);
+                getParentFragmentManager().setFragmentResult("univKey", bundle);
                 ((MainActivity)getActivity()).onBackPressed();
             }
         });

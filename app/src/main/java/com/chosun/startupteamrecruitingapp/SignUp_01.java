@@ -21,7 +21,7 @@ public class SignUp_01 extends Fragment {
         ImageView closeIcon= (ImageView)rootView.findViewById(R.id.close_btn);
         closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
         ConstraintLayout stuSignUpBtn = (ConstraintLayout) rootView.findViewById(R.id.student_signup_constraint);
-        stuSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_student_signup_01, null));
+        stuSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_student_signup_02, null));
         ConstraintLayout normalSignUpBtn = (ConstraintLayout) rootView.findViewById(R.id.normal_signup_constraint);
         normalSignUpBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_goto_signup_02, null));
 
