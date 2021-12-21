@@ -6,17 +6,22 @@
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable-mdpi/my_button.xml" value="0.346875" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3463541666666667" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/activity_main.xml" value="0.2619047619047619" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/custom_editbox.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/custom_edittext.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_challenge.xml" value="0.2689969604863222" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_funding.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_home.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_party.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_search_skill.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signin.xml" value="0.2689969604863222" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_01.xml" value="0.3307291666666667" />
-        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_02.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_02.xml" value="0.25" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_03.xml" value="0.1" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_01.xml" value="0.16033434650455927" />
-        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_02.xml" value="0.16033434650455927" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_signup_stu_02.xml" value="0.1" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/fragment_title.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/linearlayout_plus_info.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/listview_item.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/layout/signup_toolbar.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/S20185029/AndroidStudioProjects/StartUpTeamRecruitingApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/S20185029/StudioProjects/StartUpTeamRecruitingApp/app/src/main/res/drawable-mdpi/my_button.xml" value="0.3958333333333333" />

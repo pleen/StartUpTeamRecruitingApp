@@ -44,6 +44,7 @@
                     app:layout_constraintVertical_bias="0.0" />
 
                 <EditText
+                    android:id="@+id/name_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
@@ -74,7 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/noto_sans"
-                    android:text="캐릭터 명"
+                    android:text="닉네임"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold"
@@ -86,7 +87,7 @@
                     app:layout_constraintVertical_bias="0.0" />
 
                 <EditText
-                    android:id="@+id/character_name_text"
+                    android:id="@+id/nick_name_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
@@ -183,6 +184,7 @@
                     android:theme="@style/EditTextStyle"
                     android:hint="비밀번호를 입력하세요."
                     android:selectAllOnFocus="true"
+                    android:inputType="textPassword"
                     app:layout_constraintBottom_toTopOf="@+id/password_confirm_text"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -199,6 +201,7 @@
                     android:theme="@style/EditTextStyle"
                     android:hint="비밀번호를 다시 한 번 입력하세요."
                     android:selectAllOnFocus="true"
+                    android:inputType="textPassword"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -320,7 +323,7 @@
                     app:layout_constraintVertical_bias="0.0" />
 
                 <EditText
-                    android:id="@+id/introduction_text"
+                    android:id="@+id/introduce_text"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_marginStart="2dp"
