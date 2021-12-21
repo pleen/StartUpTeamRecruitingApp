@@ -58,9 +58,9 @@ public class Character implements Serializable {
     public String getMemNickname() {
         return this.memNickname;
     }
-//    public int getMemSeq() {
-//        return this.memSeq;
-//    }
+    public int getMemSeq() {
+        return this.memSeq;
+    }
     public int getUnivSeq() {
         return univSeq;
     }

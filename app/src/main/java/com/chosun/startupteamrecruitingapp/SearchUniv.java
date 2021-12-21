@@ -43,7 +43,7 @@ public class SearchUniv extends Fragment {
         listView = (ListView)rootView.findViewById(R.id.univ_list);
         searchUnivText = (EditText)rootView.findViewById(R.id.univ_search_text);
 
-        univInterface service = retrofit.create(univInterface.class);
+        RetrofitInterface service = retrofit.create(RetrofitInterface.class);
         Call<List<University>> call = service.getUnivs();
         call.enqueue(new Callback<List<University>>() {
             @Override

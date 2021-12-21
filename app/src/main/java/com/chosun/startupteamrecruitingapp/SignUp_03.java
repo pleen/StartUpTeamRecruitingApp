@@ -118,7 +118,7 @@ public class SignUp_03 extends Fragment{
         goToMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                member.setMemStat("NONAUTH");
+                member.setMemStat("AUTH");
                 member.getCharacter().setMemMbti(mbtiSpinner.getSelectedItem().toString());
                 member.getCharacter().setMemMajor(majorText.getText().toString());
                 addMemSkill();

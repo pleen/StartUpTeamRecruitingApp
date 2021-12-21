@@ -16,7 +16,6 @@ import androidx.navigation.Navigation;
 public class SignUp_02 extends Fragment {
     Member member;
     ImageView closeIcon;
-
     EditText nameText;
     EditText nickNameText;
     EditText idText;
@@ -49,6 +48,7 @@ public class SignUp_02 extends Fragment {
             @Override
             public void onClick(View v) {
                 member.setMemNm(nameText.getText().toString());
+                member.setCharacter(new Character());
                 member.getCharacter().setMemNickname(nickNameText.getText().toString());
                 member.setMemId(idText.getText().toString());
                 member.setPassword(passwordText.getText().toString());

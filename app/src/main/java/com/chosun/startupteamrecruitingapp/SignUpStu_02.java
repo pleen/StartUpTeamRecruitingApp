@@ -40,7 +40,6 @@ public class SignUpStu_02 extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_signup_stu_02, container, false);
         member = new Member();
         member = SignUpStu_02Args.fromBundle(getArguments()).getMember01();
-        Log.d("testa", member.toString());
         closeIcon= (ImageView)rootView.findViewById(R.id.close_btn);
         closeIcon.setOnClickListener(v -> ((MainActivity)getActivity()).onBackPressed());
         nameText=(EditText)rootView.findViewById(R.id.name_text);
@@ -62,13 +61,13 @@ public class SignUpStu_02 extends Fragment {
             public void onClick(View v) {
                 String email = universityIdText.getText().toString() + "@" + universityDomain.getText().toString();
                 member.setMemNm(nameText.getText().toString());
+                member.setCharacter(new Character());
                 member.getCharacter().setMemNickname(nickNameText.getText().toString());
                 member.setMemId(idText.getText().toString());
                 member.setPassword(passwordText.getText().toString());
                 member.setMemPhone(phoneNumberText.getText().toString());
                 member.setMemEmail(email);
                 member.setIntroduce(introduceText.getText().toString());
-                Log.d("testa", member.toString());
                 Navigation.findNavController(rootView).navigate(SignUp_02Directions.actionGotoSignup03().setMember02(member));
             }
         });
