@@ -1,8 +1,6 @@
 package com.chosun.startupteamrecruitingapp;
 
-import java.io.Serializable;
-
-public class MemberPPLink implements Serializable {
+public class MemberPPLink {
     private int mplSeq;
     private int memSeq;
     private String mplContent;

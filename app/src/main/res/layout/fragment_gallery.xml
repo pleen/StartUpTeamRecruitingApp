@@ -1,8 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/gallery_constraint"
-    >
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Gallery">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="76dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="100dp"
+            android:visibility="invisible"
+            android:src="@drawable/icon_join" />
+
+        <ImageView
+            android:id="@+id/title_team"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/title_gallery" />
+
+        <ImageView
+            android:id="@+id/icon_search"
+            android:layout_width="76dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:visibility="invisible"
+            android:src="@drawable/icon_search" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_gallery_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gallery_art1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/gallery_fashion"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/gallery_architecture"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

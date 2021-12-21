@@ -1,8 +1,6 @@
 package com.chosun.startupteamrecruitingapp;
 
-import java.io.Serializable;
-
-public class MemberAwards implements Serializable {
+public class MemberAwards {
     private int awardSeq;
     private int memSeq;
     private String awardContent;
@@ -11,7 +9,7 @@ public class MemberAwards implements Serializable {
         this.awardSeq=0;
         this.memSeq=0;
         this.awardContent="";
-        this.awardTime="";
+        this.awardTime="2001-01-01";
     }
     public void setAwardSeq(int awardSeq) {
         this.awardSeq = awardSeq;

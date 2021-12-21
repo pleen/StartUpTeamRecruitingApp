@@ -1,14 +1,12 @@
 package com.chosun.startupteamrecruitingapp;
 
-import java.io.Serializable;
-
-public class Skill implements Serializable {
+public class Skill {
     private int skillSeq;
     private String skillNm;
     private String skillClassification;
     private String fileSeq;
     Skill() {
-        this.skillSeq=0;
+        this.skillSeq=1;
         this.skillNm="";
         this.skillClassification="";
         this.fileSeq="";

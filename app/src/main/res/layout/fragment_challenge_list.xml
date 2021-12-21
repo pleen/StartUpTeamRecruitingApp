@@ -3,13 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context=".Fragment_challenge_list">
+    tools:context=".ChallengeList">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/challenge_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="fragment_challenge_list" />
-
+        android:layout_height="match_parent"/>
 </FrameLayout>

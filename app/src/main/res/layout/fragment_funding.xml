@@ -1,8 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/funding_constraint"
-    >
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Funding">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="76dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="100dp"
+            android:visibility="invisible"
+            android:src="@drawable/icon_join" />
+
+        <ImageView
+            android:id="@+id/title_team"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/title_funding" />
+
+        <ImageView
+            android:id="@+id/icon_search"
+            android:layout_width="76dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:visibility="invisible"
+            android:src="@drawable/icon_search" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_banner" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/home_banner2" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/home_banner3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/imageView_funding_shopping"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/funding_shopping"/>
+
+                <ImageView
+                    android:id="@+id/imageView_more1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_more" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_shopping1"
+                        android:layout_marginLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_shopping2"
+                        android:layout_marginLeft="20dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_shopping3"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/imageView_user_tip"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/funding_popular"/>
+
+                <ImageView
+                    android:id="@+id/imageView_more2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_more" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_popular1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_popular2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_popular3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_popular4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/funding_popular5" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/imageView_equipment2"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/home_equipment"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

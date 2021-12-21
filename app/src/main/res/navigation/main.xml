@@ -5,10 +5,17 @@
     android:id="@+id/main"
     app:startDestination="@id/home">
     <fragment
-        android:id="@+id/party"
-        android:name="com.chosun.startupteamrecruitingapp.Party"
-        android:label="fragment_party"
-        tools:layout="@layout/fragment_party">
+        android:id="@+id/expedition"
+        android:name="com.chosun.startupteamrecruitingapp.Expedition"
+        android:label="fragment_expedition"
+        tools:layout="@layout/fragment_expedition">
+        <action
+            android:id="@+id/action_goto_expedition_create"
+            app:destination="@id/expedition_create"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/challenge"
@@ -21,6 +28,13 @@
         android:name="com.chosun.startupteamrecruitingapp.Home"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_goto_profile"
+            app:destination="@id/profile"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/gallery"
@@ -33,5 +47,69 @@
         android:name="com.chosun.startupteamrecruitingapp.Funding"
         android:label="fragment_funding"
         tools:layout="@layout/fragment_funding">
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.chosun.startupteamrecruitingapp.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+    <fragment
+        android:id="@+id/expedition_create"
+        android:name="com.chosun.startupteamrecruitingapp.ExpeditionCreate"
+        android:label="fragment_expedition_create"
+        tools:layout="@layout/fragment_expedition_create">
+        <action
+            android:id="@+id/action_goto_expedition_recommender"
+            app:destination="@id/expedition_recommender"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/expedition_recommender"
+        android:name="com.chosun.startupteamrecruitingapp.ExpeditionRecommender"
+        android:label="fragment_expedition_recommender"
+        tools:layout="@layout/fragment_expedition_recommender">
+        <action
+            android:id="@+id/action_goto_expedition_message"
+            app:destination="@id/expedition_message"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/expedition_message"
+        android:name="com.chosun.startupteamrecruitingapp.ExpeditionMessage"
+        android:label="fragment_expedition_message"
+        tools:layout="@layout/fragment_expedition_message">
+        <action
+            android:id="@+id/action_goto_expedition_create_mentor"
+            app:destination="@id/expedition_create_mentor"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/expedition_create_mentor"
+        android:name="com.chosun.startupteamrecruitingapp.ExpeditionCreateMentor"
+        android:label="fragment_expedition_create_mentor"
+        tools:layout="@layout/fragment_expedition_create_mentor">
+        <action
+            android:id="@+id/action_goto_expedition_quest"
+            app:destination="@id/expedition_quest"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/expedition_quest"
+        android:name="com.chosun.startupteamrecruitingapp.ExpeditionQuest"
+        android:label="fragment_expedition_quest"
+        tools:layout="@layout/fragment_expedition_quest">
     </fragment>
 </navigation>

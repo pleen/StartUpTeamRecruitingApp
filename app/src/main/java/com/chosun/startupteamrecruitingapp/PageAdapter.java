@@ -7,10 +7,10 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChallengePageAdapter extends FragmentStateAdapter {
+public class PageAdapter extends FragmentStateAdapter {
     private List<Fragment> fragmentList = new ArrayList<>();
 
-    public ChallengePageAdapter(Fragment fm) {
+    public PageAdapter(Fragment fm) {
         super(fm);
     }
 

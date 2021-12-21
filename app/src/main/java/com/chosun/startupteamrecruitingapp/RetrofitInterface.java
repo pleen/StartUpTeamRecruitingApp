@@ -13,4 +13,10 @@ public interface RetrofitInterface {
 
     @GET("startup/university")
     Call<List<University>> getUnivs();
+
+    @POST("startup/login")
+    Call<Void> login(@Body LoginDTO loginDTO);
+
+    @GET("startup/challenges")
+    Call<List<ChallengeDTO>> challenges();
 }

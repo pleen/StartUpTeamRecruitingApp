@@ -1,13 +1,13 @@
 package com.chosun.startupteamrecruitingapp;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -59,16 +59,23 @@ public class SignUpStu_02 extends Fragment {
         goToSignUpBtn_03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = universityIdText.getText().toString() + "@" + universityDomain.getText().toString();
-                member.setMemNm(nameText.getText().toString());
-                member.setCharacter(new Character());
-                member.getCharacter().setMemNickname(nickNameText.getText().toString());
-                member.setMemId(idText.getText().toString());
-                member.setPassword(passwordText.getText().toString());
-                member.setMemPhone(phoneNumberText.getText().toString());
-                member.setMemEmail(email);
-                member.setIntroduce(introduceText.getText().toString());
-                Navigation.findNavController(rootView).navigate(SignUp_02Directions.actionGotoSignup03().setMember02(member));
+                if(nameText.getText().toString().isEmpty()||nickNameText.getText().toString().isEmpty()||passwordText.getText().toString().isEmpty()||passwordConfirmText.getText().toString().isEmpty()
+                        ||phoneNumberText.getText().toString().isEmpty()||universityIdText.getText().toString().isEmpty()||universityDomain.getText().toString().isEmpty()){
+                    Toast.makeText(getContext(), "빈 칸을 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if(!passwordText.getText().toString().equals(passwordConfirmText.getText().toString())) {
+                    Toast.makeText(getContext(), "비밀번호가 다릅니다.", Toast.LENGTH_SHORT).show();
+                } else {
+                    String email = universityIdText.getText().toString() + "@" + universityDomain.getText().toString();
+                    member.setMemNm(nameText.getText().toString());
+                    member.setCharacter(new Character());
+                    member.getCharacter().setMemNickname(nickNameText.getText().toString());
+                    member.setMemId(idText.getText().toString());
+                    member.setPassword(passwordText.getText().toString());
+                    member.setMemPhone(phoneNumberText.getText().toString());
+                    member.setMemEmail(email);
+                    member.setIntroduce(introduceText.getText().toString());
+                    Navigation.findNavController(rootView).navigate(SignUp_02Directions.actionGotoSignup03().setMember02(member));
+                }
             }
         });
 

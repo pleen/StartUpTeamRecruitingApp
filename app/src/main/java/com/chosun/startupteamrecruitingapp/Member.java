@@ -14,7 +14,7 @@ public class Member implements Serializable {
     private String memType;
     private Character character;
 
-    Member(){
+    public Member(){
         this.memId="";
         this.password="";
         this.memNm="";

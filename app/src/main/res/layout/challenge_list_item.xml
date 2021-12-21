@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/challenge_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/challenge_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:maxLines="1"
+            android:text="title"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/challenge_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:text="period"
+            android:fontFamily="@font/noto_sans"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/challenge_qualifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="qualifi"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

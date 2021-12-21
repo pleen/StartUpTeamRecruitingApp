@@ -1,10 +1,9 @@
 package com.chosun.startupteamrecruitingapp;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Character implements Serializable {
+public class Character {
     private String memNickname;
     private int memSeq;
     private int univSeq;
@@ -18,7 +17,7 @@ public class Character implements Serializable {
     Character(){
         this.memNickname="";
         this.memSeq =0;
-        this.univSeq=0;
+        this.univSeq=308;
         this.teamSeq=0;
         this.memMajor="";
         this.memMbti="";

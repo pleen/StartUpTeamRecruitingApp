@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,15 +48,22 @@ public class SignUp_02 extends Fragment {
         goToSignUpBtn_03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                member.setMemNm(nameText.getText().toString());
-                member.setCharacter(new Character());
-                member.getCharacter().setMemNickname(nickNameText.getText().toString());
-                member.setMemId(idText.getText().toString());
-                member.setPassword(passwordText.getText().toString());
-                member.setMemPhone(phoneNumberText.getText().toString());
-                member.setMemEmail(emailText.getText().toString());
-                member.setIntroduce(introduceText.getText().toString());
-                Navigation.findNavController(rootView).navigate(SignUp_02Directions.actionGotoSignup03().setMember02(member));
+                if(nameText.getText().toString().isEmpty()||nickNameText.getText().toString().isEmpty()||passwordText.getText().toString().isEmpty()||
+                        passwordConfirmText.getText().toString().isEmpty()||phoneNumberText.getText().toString().isEmpty()||emailText.getText().toString().isEmpty()){
+                    Toast.makeText(getContext(), "빈 칸을 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if(!passwordText.getText().toString().equals(passwordConfirmText.getText().toString())) {
+                    Toast.makeText(getContext(), "비밀번호가 다릅니다.", Toast.LENGTH_SHORT).show();
+                } else {
+                    member.setMemNm(nameText.getText().toString());
+                    member.setCharacter(new Character());
+                    member.getCharacter().setMemNickname(nickNameText.getText().toString());
+                    member.setMemId(idText.getText().toString());
+                    member.setPassword(passwordText.getText().toString());
+                    member.setMemPhone(phoneNumberText.getText().toString());
+                    member.setMemEmail(emailText.getText().toString());
+                    member.setIntroduce(introduceText.getText().toString());
+                    Navigation.findNavController(rootView).navigate(SignUp_02Directions.actionGotoSignup03().setMember02(member));
+                }
             }
         });
         return rootView;

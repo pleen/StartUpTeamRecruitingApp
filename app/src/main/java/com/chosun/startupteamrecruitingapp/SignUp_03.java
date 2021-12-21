@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -97,16 +98,16 @@ public class SignUp_03 extends Fragment{
             }
         };
 
-        profileImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MainActivity) getActivity()).selecteImage();
-                bitmap = ((MainActivity) getActivity()).getBitmapFromMemCache("profile");
-                if (bitmap != null) {
-                    profileImage.setImageBitmap(bitmap);
-                }
-            }
-        });
+//        profileImage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ((MainActivity) getActivity()).selectImage();
+//                bitmap = ((MainActivity) getActivity()).getBitmapFromMemCache("profile");
+//                if (bitmap != null) {
+//                    profileImage.setImageBitmap(bitmap);
+//                }
+//            }
+//        });
 
         addCustomText(skillTexts, "스킬을 입력해주세요.", skillLayout);
         addCustomText(awardsTexts, "경력을 입력해주세요", awardsLayout);
@@ -124,6 +125,7 @@ public class SignUp_03 extends Fragment{
                 addMemSkill();
                 addMemAwards();
                 addMemPPLinks();
+                Toast.makeText(getContext(), "잠시만 기다려 주세요.",Toast.LENGTH_SHORT).show();
                 RetrofitInterface service = retrofit.create(RetrofitInterface.class);
                 Call<Member> call = service.register(member);
                 Log.d("testa",member.toString());
@@ -133,15 +135,17 @@ public class SignUp_03 extends Fragment{
                         if (response.isSuccessful()) {
                             Member result = response.body();
                             Log.d("Retrofit", "성공 "+result.toString());
-                            Navigation.findNavController(rootView).navigate(R.id.action_signup_to_main);
+                            Toast.makeText(getContext(), "이메일 인증을 진행해 주십시오.",Toast.LENGTH_LONG).show();
+                            Navigation.findNavController(rootView).navigate(R.id.action_goto_signin);
                         } else {
                             Log.d("Retrofit", "error code: "+response.code());
+                            Toast.makeText(getContext(), "응답 오류: "+response.code(),Toast.LENGTH_LONG).show();
                         }
                     }
-
                     @Override
                     public void onFailure(Call<Member> call, Throwable t) {
                         Log.d("Retrofit", "onFailure():" + t.getMessage());
+                        Toast.makeText(getContext(), "응답 실패: "+t.getMessage(),Toast.LENGTH_LONG).show();
                     }
                 });
             }
@@ -152,10 +156,10 @@ public class SignUp_03 extends Fragment{
     @Override
     public void onResume() {
         super.onResume();
-        bitmap = ((MainActivity) getActivity()).getBitmapFromMemCache("profile");
-        if (bitmap != null) {
-            profileImage.setImageBitmap(bitmap);
-        }
+//        bitmap = ((MainActivity) getActivity()).getBitmapFromMemCache("profile");
+//        if (bitmap != null) {
+//            profileImage.setImageBitmap(bitmap);
+//        }
     }
 
     public void addCustomText(ArrayList<CustomEditText> customEditTexts, String hint, LinearLayout linear) {

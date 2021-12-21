@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -23,9 +22,7 @@
         android:layout_height="wrap_content"
         app:menu="@menu/bottom_nav_menu"
         android:background="@color/white"
-        app:itemTextColor="@color/black"
+        app:itemTextColor="#999999"
+        app:itemIconTint="#999999"
         app:labelVisibilityMode="labeled"/>
-
-
-
 </LinearLayout>

@@ -12,17 +12,6 @@ public class UploadFile {
     private String createDate;
     private String modifyDate;
 
-    public UploadFile() {
-        this.fileRealNm ="";
-        fileStoredNm="";
-        filePath="";
-        fileSeq=0;
-        fileType="";
-        deleteFlag="";
-        createDate="";
-        modifyDate="";
-    }
-
     public void setFileSeq(int fileSeq) {this.fileSeq = fileSeq;}
     public void setFileRealNm(String fileRealNm) {this.fileRealNm = fileRealNm; }
     public void setFileStoredNm(String fileStoredNm) {this.fileStoredNm = fileStoredNm; }
